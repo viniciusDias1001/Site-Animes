@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+}
+
+
+body{   
+    font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+    }
+
+    html{
+         font-size: 62.5%;
+    }
+
+      p{
+        font-family: 'Roboto', sans-serif;
+        
+      }
+    h1,h2,h3,h4,h5,h6{
+     font-family: 'Inconsolata', monospace;
+      
+    }
+
+    h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        
+
+    }
+    h2{
+          font-size: 5.5rem;
+          margin-bottom: 30px;
+          text-transform: uppercase;
+          font-style: italic;
+          font-weight: bolder;
+        
+    }
+    h3{
+        font-size: 4.5rem;
+    }
+    h4{
+        font-size: 4.5rem;
+    }
+    h5{
+        font-size: 4rem;
+    } 
+    h6{
+        font-size: 3.5rem;
+    }
+
+    .main-container{
+        max-width: 192rem;
+        margin: 0 auto;
+    }
+    .section{
+        min-height: 100vh;
+       
+    }
+    .section1{
+        min-height: 100vh;
+        background-image: url("onePiece.jpg");
+        background-position: center;
+        background-size: cover;
+        
+       
+        
+    }
+    .section2{
+        min-height: 100vh;
+        background-image: url("anjor.png");
+        background-position:center;
+        background-size: cover;
+    }
+
+    .section4{
+        min-height: 100vh;
+        background-image: url("294213.jpg");
+        background-position:center;
+        background-size: cover;
+
+    }
+
+    .menu{
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border: 0.04rem solid black;
+    }
+    .menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        
+
+    }
+
+    .menu ul{
+        display: flex;
+        list-style: none;
+       
+        
+    }
+
+    .menu ul li a{
+        display: block;
+        text-decoration: none;
+        color: rgb(252, 252, 252);
+        padding: 2rem;
+        font-size: 1.5rem;
+        position: relative;
+        
+       
+        
+    }
+
+    .menu h1 a{
+        text-decoration: none;
+        font-size: 3rem;
+        color: inherit;
+        margin-left: 10px;
+        color: rgb(252, 252, 252);
+      
+        
+        
+        
+    }
+
+    .menu ul li a::after{
+       content: "";
+       position: absolute;
+
+       left: 0;
+       bottom: 1rem;
+       left: 50%;
+       width: 0%;
+       height: 0.2rem;
+       background-color: darkred;
+       transition: all 300ms ease-in-out;
+       
+        
+    }
+
+    .menu ul li a:hover::after{
+        content: "";
+        position: absolute;
+ 
+        left: 0;
+        bottom: 1rem;
+        left: 25%;
+        width: 50%;
+        height: 0.2rem;
+        background-color: darkred;
+        transition: all 400ms ease-in-out;
+        
+         
+     }
+
+     .space{
+        margin-top: 60px;
+     }
+
+ .intro-container{
+    display: grid;
+    margin-left: 75px;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem;
+    align-items: center;
+    height: 100vh;
+ }
+ 
+ .parte1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+ }
+
+ .parte2{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 300px;
+ }
+
+ .texto-parte1{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 9px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.924);
+ }
+.legal{
+   border-radius: 50%;
+   height: 250px;
+   width:  280px;
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px rgba(0, 0, 0, 0.625);
+   max-width: 100%;
+   max-height:100%;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+  
+
+}
+
+.h2-1{
+    background-color: rgb(0, 0, 0,0.4);
+    border-radius: 10px;
+    padding: 7px;
+    color: aliceblue;
+    border: 1px solid black;
+    box-shadow: 10px 3px 3px  black;
+    
+}
+
+.p1{
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.584);
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+  
+
+}
+.p2{
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.584);
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.conteudo-pag-2{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-one{
+    background-color: rgb(0, 0, 0,0.9);
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(254, 254, 254);
+    border-radius: 10px;
+   
+}
+
+.titulo-two{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(254, 254, 254);
+    border-radius: 10px;
+    margin-top: 25px;
+
+}
+
+
+.contpag3{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+}
+
+
+.card{
+    background-image: url(599379.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(247, 49, 49);
+    font-family: 'Roboto', sans-serif;
+   
+   
+}
+
+.h1-card{
+    
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 10px;
+    color: aliceblue;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding: 10px;
+    
+    
+}
+
+.navCard{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.card-luffy{
+    background-image: linear-gradient(black,black);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 320px;
+    
+
+    
+    
+}
+
+
+
+.img-luffy{
+    background-image: url(710617.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.card-luffy .img-luffy span{
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.685);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    margin-right: 230px;
+   
+}
+.card-luffy:hover .img-luffy{
+    opacity: 1;
+    width: 500px;
+
+}
+
+
+
+
+.content-luffy{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translate(0);
+}
+
+.card-luffy .content-luffy p{
+    margin-bottom: 0;
+}
+
+.card-luffy:hover .content-luffy{
+    padding: 20px;
+    height: 300px;
+}
+
+.content-titulo-luffy{
+    font-size: 24px;
+    font-weight: bolder;
+    
+   
+}
+
+.desc-luffy{
+    font-size: 17px;
+    font-weight: 100;
+    opacity: .8;
+}
+
+.card-luffy .arrow{
+    padding-bottom: 2px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+    margin-bottom: 6px;
+}
+
+.card-luffy:hover .arrow{
+    transform: rotate(0);
+}
+
+
+.img-gon{
+    background-image: url(840252.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+
+}
+
+.card-gon:hover .img-gon{
+    opacity: 1;
+    width: 500px;
+
+}
+
+.span-gon{
+    color: black;
+}
+
+.card-gon .img-gon span{
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: 100;
+    background-color: rgba(255, 255, 255, 0.685);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    margin-right: 230px;
+   
+}
+
+.content-titulo-gon{
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.desc-gon{
+    font-size: 17px;
+    font-weight: 100;
+   
+    color: black;
+
+}
+
+.card-gon{
+    background-image: linear-gradient(rgb(70, 145, 47),rgb(35, 182, 35));
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 320px;
+    
+
+    
+    
+}
+
+.card-gon .content-luffy p{
+    margin-bottom: 0;
+}
+
+.card-gon:hover .content-luffy{
+    padding: 20px;
+    height: 300px;
+}
+
+
+.card-gon .arrow-gon{
+    padding-bottom: 2px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+    margin-bottom: 6px;
+    color: black;
+}
+.card-gon:hover .arrow-gon{
+    transform: rotate(0);
+}
+
+fieldset{
+   background: #ffffff30;
+   border-radius: 20px;
+   border: 2px solid #ffffff30;
+   width: 620px;
+   height: 520px;
+   display: flex;
+   align-items: center;
+   
+  
+   
+}
+
+legend{
+    background: #ffffff30;
+    border-radius: 20px;
+    border: 2px solid #ffffff30;
+}
+
+.form{
+    grid-column: span 2;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-grid{
+    border-top: none;
+    display: flex;
+    font-display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.form-group{
+    flex: 1 1 auto;
+    min-width: 320px;
+   margin-left: 120px;
+}
+
+
+.botao-send{
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.808),rgb(255, 1, 1));
+    width: 360px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid;
+    
+}
+
+.int{
+    background: #ffffff30;
+    max-width: 320px;
+    font-size: 18px;
+    width: 100vw;
+    display: block;
+
+}
+
+.int:focus{
+   box-shadow: 6px 6px rgb(7, 7, 7);
+   border: 2px solid black;
+}
+
+.botao-send:hover{
+    
+    background-image: linear-gradient(50deg, rgb(3, 3, 3), rgb(87, 14, 14));
+    transition: all .7s ease-in-out;
+    color: #ffffff;
+    box-shadow: 2px 2px black;
+
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(669305.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
